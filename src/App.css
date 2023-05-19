@@ -5,14 +5,15 @@
   }
 
   .main_app_container {
-    color: blueviolet;
+    color: #FBFBFB;
   }
 
   .img_container {
     min-width: 425px;
     max-height: 712px;
-    background-image: url("./assets/img/background/rick/backgroundHeader.svg");
-    background-size: 100vw;
+    background: 100vw url("./assets/img/background/rick/backgroundHeader.svg");
+
+    overflow-y: visible;
   }
 
   .img_container>img {
@@ -20,9 +21,17 @@
   }
 
   .content_container {
+    /* background: url("./assets/img/background/rick/backgroundPage.svg") no-repeat cover; */
     background-image: url("./assets/img/background/rick/backgroundPage.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover
+  }
+
+  .content_container h3 {
+    font-size: 26px;
+    font-family: cursive;
+
+    text-align: center;
   }
 
 }

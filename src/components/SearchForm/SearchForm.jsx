@@ -1,3 +1,4 @@
+import "./SearchForm.css";
 import { useState } from "react";
 
 const SearchForm = ({ oeMeEstoyEnviando }) => {
@@ -34,12 +35,14 @@ const SearchForm = ({ oeMeEstoyEnviando }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" value={searchLocation} onChange={handleChange} />
+    <form className="search_form" onSubmit={handleSubmit}>
+      <div className="input_button__div">
+        <input type="text" value={searchLocation} onChange={handleChange} />
+        <button type="submit"> SEARCH </button>
+      </div>
       <p style={{ color: "red" }} role="alert">
         {errorSearchLocation}
       </p>
-      <button type="submit"> SEARCH </button>
     </form>
   );
 };
