@@ -1,11 +1,28 @@
 @media (min-width: 250px) {
   body {
-    margin: 0 0;
+    margin: 0;
+    /* width: 100vw; */
   }
 
-  section {
+  .main_app_container {
     color: blueviolet;
+  }
+
+  .img_container {
+    min-width: 425px;
+    max-height: 712px;
     background-image: url("./assets/img/background/rick/backgroundHeader.svg");
+    background-size: 100vw;
+  }
+
+  .img_container>img {
+    width: 100%;
+  }
+
+  .content_container {
+    background-image: url("./assets/img/background/rick/backgroundPage.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 }

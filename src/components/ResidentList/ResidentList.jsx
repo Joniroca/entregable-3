@@ -87,9 +87,9 @@ const ResidentList = ({ residents = [] }) => {
       {!residentsSlice.length && <p> No hay residentes en esta ubicación </p>}
 
       {Boolean(residentsSlice.length) && (
-        <ul>
+        <ul className="resident_container">
           {residentsSlice.map((residentUrl) => (
-            <li key={residentUrl}>
+            <li key={residentUrl} className="resident_card__map">
               <ResidentCard url={residentUrl} />
             </li>
           ))}

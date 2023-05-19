@@ -68,16 +68,16 @@ function App() {
   }, []);
 
   return (
-    <article>
-      <section>
+    <article className="main_app_container">
+      <section className="img_container">
         <img src={rickAndMorthyNameImg} alt="" />
       </section>
-      <SearchForm oeMeEstoyEnviando={handleOeMeEstoyEnviando} />
-
-      {location ? <Location location={location} /> : <Loader />}
-
-      <h2> Residents </h2>
-      <ResidentList residents={location?.residents} />
+      <section className="content_container">
+        <SearchForm oeMeEstoyEnviando={handleOeMeEstoyEnviando} />
+        {location ? <Location location={location} /> : <Loader />}
+        <h2> Residents </h2>
+        <ResidentList residents={location?.residents} />
+      </section>
     </article>
   );
 }
