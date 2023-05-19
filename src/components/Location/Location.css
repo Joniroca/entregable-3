@@ -1,0 +1,31 @@
+.info_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_container h2 {
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+
+    color: rgba(142, 255, 139, 1);
+}
+
+.info_container ul {
+    list-style: none;
+}
+
+.info_container b {
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    color: rgba(142, 255, 139, 1);
+}
+
+.info_container li {
+
+    margin: 6px;
+    padding: 6px;
+}

@@ -1,9 +1,10 @@
+import "./Location.css";
 import React from "react";
 import PropTypes from "prop-types";
 
 const Location = ({ location }) => {
   return (
-    <div>
+    <div className="info_container">
       <h2> {location.name} </h2>
       <ul>
         <li>

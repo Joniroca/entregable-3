@@ -1,3 +1,23 @@
+.pagination_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn_style {
+    padding: 6px;
+
+    background: black;
+
+    border: 2px rgba(142, 255, 139, 1) solid;
+    box-shadow: 3px 3px 15px rgba(142, 255, 139, 1);
+
+    color: rgba(142, 255, 139, 1);
+    border-radius: 50%;
+}
+
 .resident_container {
     display: flex;
     flex-direction: row;

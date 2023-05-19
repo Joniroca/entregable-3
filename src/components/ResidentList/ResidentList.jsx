@@ -53,8 +53,14 @@ const ResidentList = ({ residents = [] }) => {
   // console.log(residents);
   return (
     <>
-      <div>
-        <button onClick={() => changePageTo(numberPage - 1)}> Previous </button>
+      <div className="pagination_container">
+        <button
+          className="btn_style"
+          onClick={() => changePageTo(numberPage - 1)}
+        >
+          {" "}
+          Previous{" "}
+        </button>
         {/* Renderización de lista, barir { } */}
         {/* {getPageButtons()} */}
 
@@ -62,6 +68,7 @@ const ResidentList = ({ residents = [] }) => {
         {pages.map((i) => (
           //  Se le suma 1 ya que el indice empieza desde CER0
           <button
+            className="btn_style"
             key={i}
             onClick={() => changePageTo(i)}
             style={{ color: numberPage === i ? "red" : undefined }}
@@ -69,7 +76,12 @@ const ResidentList = ({ residents = [] }) => {
             {i}
           </button>
         ))}
-        <button onClick={() => changePageTo(numberPage)}> Next </button>
+        <button
+          className="btn_style"
+          onClick={() => changePageTo(numberPage + 1)}
+        >
+          Next
+        </button>
       </div>
 
       <select
